@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "NODE_ENV=test mocha tests/*",
-    "start": "node app.js"
+    "start": "node app.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Mateusz Rzepa",
   "repository": "itemsapi/itemsapi",
@@ -49,7 +51,8 @@
     "slug": "^0.9.1",
     "underscore": "^1.8.3",
     "validate.js": "^0.4.0",
-    "winston": "^2.2.0"
+    "winston": "^2.2.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -60,5 +63,6 @@
     "should": "^4.6.5",
     "sinon": "^1.15.3",
     "supertest": "^1.0.1"
-  }
+  },
+  "snyk": true
 }
