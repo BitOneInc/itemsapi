@@ -42,7 +42,7 @@
     "moment": "^2.13.0",
     "mongoose": "^4.4.20",
     "morgan": "^1.7.0",
-    "nconf": "^0.7.1",
+    "nconf": "^0.11.4",
     "randomstring": "^1.1.5",
     "redis": "^2.6.0-1",
     "request": "^2.72.0",
